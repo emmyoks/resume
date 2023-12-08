@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap'); 
+@page {
+  size: A4;
+  margin-left: 0cm;
+  margin-right: 0cm;
+  }
+
+@media print {
+  .pagebreak {
+    clear:both;
+    page-break-before: always;
+  }
+}
+@page {
+  @bottom-left {
+    content: counter(page) ' of ' counter(pages);
+  }
+}
+
+  body {
+    -webkit-print-color-adjust: exact;
+    font-family: Arial, sans-serif, Ubuntu;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  .px{padding: 0 40px;}
+  .grayed-text {
+    color: #666766;
+  }
+
+  p{
+    margin-block-start:0;
+    margin-block-end:0;
+  }
+  main {
+    margin-bottom: 16px;
+  }
+  #title-name-intro{
+
+  }
+
+  #title-name-intro h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 12px 0 8px 0;
+    color: #313C4E;
+  }
+  #title-name-intro p {
+    margin: 8px 0 8px 0;
+  }
+  #title-name-intro b {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #666766;
+  }
+
+  #contact-socials {
+    margin: 20px 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-top: 3px #201d1d solid;
+    border-bottom: 3px #201d1d solid;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-social-item{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+  }
+  .contact-social-item:nth-child(1){
+    margin-top: 0;
+  }
+  #contact-socials .link{
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  .contact-social-item .icon{
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px !important;
+  }
+  .contact-social-item#mail-link .icon{
+    background-image: url("https://d.novoresume.com/yna_pub/svg/contact/email/a-1.svg");  
+  }
+  .contact-social-item#location-link .icon{
+    background-image: url("https://d.novoresume.com/yna_pub/svg/contact/address_mask/a-1.svg");
+  }
+  .contact-social-item#x-link .icon{
+    background-image: url("/resume/x-logo-no-fill.svg");
+  }
+  .contact-social-item#phone-link .icon{
+    background-image: url("https://d.novoresume.com/yna_pub/svg/contact/phone/a-1.svg"); 
+  }
+  .contact-social-item#linkedin-link .icon{
+    background-image: url("https://d.novoresume.com/yna_pub/svg/contact/linkedin/a-1.svg");
+  }
+  .contact-social-item#github-link .icon{
+    background-image: url("https://d.novoresume.com/yna_pub/svg/contact/github/a-1.svg");
+  }
+
+  #education-section {
+
+  }
+
+  h2, h3, h4 {
+    font-weight: 600;
+    margin: 8px 0 8px 0;
+  }
+  #education-section .edu {
+    display: flex;
+    flex-direction: column;
+  }
+  .topic {
+    color: #313C4E;
+  }
+  .subtopic{
+    margin-top: 0;
+  }
+  .subsubtopic{
+    margin: -2px 0 8px 0;
+  }
+
+.duration-location {
+  display: flex;
+  justify-content: space-between;
+  color: #666766;
+  font-size: 14px;
+}
+.duration-time{
+}
+.topic-description{
+  color: #666766;
+}
+.list-title {
+  margin-top: 8px;
+  color: #666766;
+  font-size: 14px;
+}
+
+ul.list {
+  margin-block-start: 8px !important ;
+  padding-inline-start: 1rem !important;
+  list-style-type: "- ";
+}
+
+#skill-section {
+
+}
+#skill-section .subsubtopic {
+  display: inline-block;
+}
+#skill-section .sub-skill-list {
+  display: inline-block;
+}
