@@ -12,6 +12,9 @@
     clear:both;
     page-break-before: always;
   }
+  /* #small-screen-tip {
+    display: none;
+  } */
 }
 @page {
   @bottom-right {
@@ -30,6 +33,13 @@
     background-color: #f4f4f4;
   }
 
+  /* #small-screen-tip {
+    width: 100%;
+    background-color: #f8d7da;
+    color: #721c24; 
+    text-align: center;
+    padding: 10px;
+  } */
   .px{padding: 0 40px;}
   .grayed-text {
     color: #666766;
@@ -41,9 +51,6 @@
   }
   main {
     margin-bottom: 16px;
-  }
-  #title-name-intro{
-
   }
 
   #title-name-intro h1 {
@@ -108,10 +115,6 @@
     background-image: url("https://d.novoresume.com/yna_pub/svg/contact/github/a-1.svg");
   }
 
-  #education-section {
-
-  }
-
   h2, h3, h4 {
     font-weight: 600;
     margin: 8px 0 8px 0;
@@ -136,8 +139,7 @@
   color: #666766;
   font-size: 14px;
 }
-.duration-time{
-}
+
 .topic-description{
   color: #666766;
 }
@@ -153,9 +155,6 @@ ul.list {
   list-style-type: "- ";
 }
 
-#skill-section {
-
-}
 #skill-section .subsubtopic {
   display: inline-block;
 }
